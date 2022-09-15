@@ -1,0 +1,64 @@
+
+.main-section {
+    margin-top: 80px;
+    margin-left: 280px;
+    width: auto;
+    height: 100vh;
+    /* height: 577px; */
+}
+
+.info-card {
+    background-color: var(--lightblue);
+    width: auto;
+    height: auto;
+    margin: 40px 0;
+    box-shadow: 8px 8px 10px -5px #4040403f;
+}
+
+.info-card .info-card-header {
+    background-color: var(--blue);
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.info-card .card-data {
+    padding: 15px 20px;
+    width: auto;
+    height: auto;
+}
+
+.info-card .card-data .card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.googleMap>iframe {
+    width: 100%;
+    height: 60vh;
+}
+
+/* ******************************************************* */
+/* *********************** Media Query ******************* */
+/* ******************************************************* */
+
+@media screen and (max-width: 768px) {
+    .main-section {
+        margin-left: auto;
+    }
+
+    .googleMap>iframe {
+        width: 100%;
+        height: 60vh;
+    }
+}

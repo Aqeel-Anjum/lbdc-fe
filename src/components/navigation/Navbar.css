@@ -1,0 +1,151 @@
+/* ***************** TopBar Styling **************** */
+
+.topbar {
+    background-color: var(--blue);
+    height: 80px;
+    position: relative;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 999;
+}
+
+.topbar .logo-title {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.topbar .logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.topbar .logos .pugov {
+    width: 50px;
+    /* height: 54.07px; */
+}
+
+.topbar .logos .adb {
+    width: 40px;
+    /* height: 63.51px; */
+}
+
+.topbar .logos .pu {
+    width: 40px;
+    /* height: 80px; */
+}
+
+.topbar .logos .lums {
+    width: 100px;
+    /* height: 49.18px; */
+}
+
+#btn {
+    display: none;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+}
+
+/* ******************* SideBar Styling **************** */
+
+
+.sidebar {
+    background-color: var(--black);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 280px;
+    z-index: 999;
+}
+
+aside ul {
+    margin-left: 0;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+aside ul li {
+    list-style: none;
+    font-weight: 400;
+    margin: 10px auto;
+    position: relative;
+    max-height: 35px;
+    border-radius: 50px 0 0 50px;
+}
+
+aside ul li a span {
+    position: absolute;
+}
+
+aside ul li a span {
+    position: relative;
+    top: 1px;
+}
+
+aside ul li a:hover {
+    background-color: var(--blue);
+    width: 280px;
+    transition: 0.3s;
+    border-radius: 50px 0 0 50px;
+}
+
+.active {
+    background-color: var(--blue);
+    width: 280px;
+    border-radius: 50px 0 0 50px;
+}
+
+aside ul li a #icons {
+    width: 45px;
+    padding: 5px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+aside ul li a #arrow {
+    position: absolute;
+    right: 5px;
+    top: 36%;
+}
+
+aside ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ******************************************************* */
+/* *********************** Media Query ******************* */
+/* ******************************************************* */
+
+@media screen and (max-width: 768px) {
+    .institutions {
+        display: none !important;
+    }
+
+    #btn {
+        display: block;
+    }
+
+    .toggle-btn {
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        border: #fff solid 1px;
+        padding: 3px 5px;
+    }
+
+}
